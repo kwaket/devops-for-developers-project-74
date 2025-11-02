@@ -3,5 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.production
+      platforms:
+        - "linux/amd64"
+        - "linux/arm64"
     command: ["make", "test"]
     image: kwaket38/devops-for-developers-project-74:latest
