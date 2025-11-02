@@ -22,5 +22,5 @@ compose-stop:
 compose-restart:
 	docker compose restart
 
-compose-test:
+ci:
 	docker compose -f ./docker-compose.yml up --abort-on-container-exit --exit-code-from app
